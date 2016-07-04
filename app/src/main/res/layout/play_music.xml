@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/default_player_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+        <Spinner android:id="@+id/spinner_equalizer"
+                 android:layout_width="200dp"
+                 android:layout_height="match_parent"
+                 android:drawSelectorOnTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:dropDownWidth="wrap_content"
+                 android:paddingBottom="10dp"
+                 android:spinnerMode="dropdown"/>
+
+        <ImageView android:id="@+id/btnOn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:paddingTop="10dp"
+                   android:src="@drawable/chb_on"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#dad6d6"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="6"
+                  android:paddingBottom="5dp"
+                  android:paddingRight="20dp"
+                  android:paddingTop="5dp">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="+15"
+                      android:textColor="#ffffff"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                      android:text="0"
+                      android:textColor="#ffffff"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="-15"
+                      android:textColor="#ffffff"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="60 Hz"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/eq_vb_bg">
+                </RelativeLayout>
+                <dev.datvt.musicequalizer.VerticalSeekBar
+                    android:id="@+id/seekBar_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:thumb="@drawable/eq_vb_thumb"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/tv1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="-1500"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="230 Hz"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/eq_vb_bg">
+                </RelativeLayout>
+                <dev.datvt.musicequalizer.VerticalSeekBar
+                    android:id="@+id/seekBar_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:thumb="@drawable/eq_vb_thumb"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/tv2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="-1500"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="910 Hz"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/eq_vb_bg">
+                </RelativeLayout>
+                <dev.datvt.musicequalizer.VerticalSeekBar
+                    android:id="@+id/seekBar_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:thumb="@drawable/eq_vb_thumb"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/tv3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="-1500"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="3.60 kHz"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/eq_vb_bg">
+                </RelativeLayout>
+                <dev.datvt.musicequalizer.VerticalSeekBar
+                    android:id="@+id/seekBar_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:thumb="@drawable/eq_vb_thumb"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/tv4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="-1500"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="14.0 kHz"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="14dp"
+                                android:background="@drawable/eq_vb_bg">
+                </RelativeLayout>
+                <dev.datvt.musicequalizer.VerticalSeekBar
+                    android:id="@+id/seekBar_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:thumb="@drawable/eq_vb_thumb"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/tv5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="-1500"
+                      android:textColor="#ffffff"
+                      android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_weight="2.5">
+        <dev.datvt.musicequalizer.visualizer.VisualizerView
+            android:id="@+id/visualizer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="2.5"
+                  android:gravity="center">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+            <ImageView android:id="@+id/iv_cb_progress_bg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/cb_progress_bg"/>
+            <ImageView android:id="@+id/btnBass"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBottom="@+id/iv_cb_progress_bg"
+                       android:layout_alignLeft="@+id/iv_cb_progress_bg"
+                       android:layout_alignRight="@+id/iv_cb_progress_bg"
+                       android:layout_alignTop="@+id/iv_cb_progress_bg"
+                       android:src="@drawable/bass"/>
+
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+            <ImageView android:id="@+id/iv_cb_progress_bg_1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/cb_progress_bg"/>
+
+            <ImageView android:id="@+id/btnVisualizer"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBottom="@+id/iv_cb_progress_bg_1"
+                       android:layout_alignLeft="@+id/iv_cb_progress_bg_1"
+                       android:layout_alignRight="@+id/iv_cb_progress_bg_1"
+                       android:layout_alignTop="@+id/iv_cb_progress_bg_1"
+                       android:src="@drawable/bass"/>
+
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+            <ImageView android:id="@+id/iv_cb_v_progress_bg"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/cb_progress_bg"/>
+            <ImageView android:id="@+id/btnVolumn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBottom="@+id/iv_cb_v_progress_bg"
+                       android:layout_alignLeft="@+id/iv_cb_v_progress_bg"
+                       android:layout_alignRight="@+id/iv_cb_v_progress_bg"
+                       android:layout_alignTop="@+id/iv_cb_v_progress_bg"
+                       android:padding="3dp"
+                       android:src="@drawable/volume"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="47dp"
+                    android:paddingRight="34dp">
+        <TextView android:id="@+id/tvBass"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:text="Bass"
+                  android:textColor="#ffffff"
+                  android:textSize="15sp"
+                  android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="93dp"
+                  android:layout_toRightOf="@+id/tvBass"
+                  android:text="Stereo"
+                  android:textColor="#ffffff"
+                  android:textSize="15sp"
+                  android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:text="Volume"
+                  android:textColor="#ffffff"
+                  android:textSize="15sp"
+                  android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#dad6d6"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_gravity="center"
+                  android:layout_weight="3.5"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:paddingBottom="5dp"
+                  android:paddingLeft="5dp"
+                  android:paddingRight="5dp"
+                  android:paddingTop="10dp">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+            <ImageView android:id="@+id/btnSpectrum"
+                       android:layout_width="32dp"
+                       android:layout_height="32dp"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/btn_spectrum"/>
+            <TextView android:id="@+id/tvSongName"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true"
+                      android:ellipsize="marquee"
+                      android:gravity="center"
+                      android:marqueeRepeatLimit="marquee_forever"
+                      android:paddingLeft="80dp"
+                      android:paddingRight="80dp"
+                      android:scrollHorizontally="true"
+                      android:singleLine="true"
+                      android:text="Đếm ngày xa em - Only One , Lou Hoang"
+                      android:textColor="#ffffff"
+                      android:textSize="15sp"
+                      android:textStyle="bold"
+                      android:typeface="sans"/>
+            <ImageView android:id="@+id/btnListMusic"
+                       android:layout_width="32dp"
+                       android:layout_height="32dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/btn_list_song"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="2"
+                      android:gravity="center">
+            <TextView android:id="@+id/tvTimeRun"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:text="00.00"
+                      android:textColor="#ffffff"
+                      android:typeface="sans"/>
+            <SeekBar android:id="@+id/seekBar"
+                     style="@style/style_seekbar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1"/>
+            <TextView android:id="@+id/tvSongDuration"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center"
+                      android:text="4.15"
+                      android:textColor="#ffffff"
+                      android:typeface="sans"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_gravity="center"
+                      android:layout_weight="3"
+                      android:gravity="center"
+                      android:padding="3dp">
+            <ImageView android:id="@+id/btnShufle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:src="@drawable/btn_shufle"/>
+            <ImageView android:id="@+id/btnPrev"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/btn_prev"/>
+            <ImageView android:id="@+id/btnPlay"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:src="@drawable/btn_play"/>
+            <ImageView android:id="@+id/btnNext"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="10dp"
+                       android:layout_weight="1"
+                       android:src="@drawable/btn_next"/>
+            <ImageView android:id="@+id/btnRepeat"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:src="@drawable/btn_repeat"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

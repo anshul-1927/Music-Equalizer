@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#34fa00f2">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp">
+
+        <ImageView android:id="@+id/ivIcon"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:src="@drawable/hiphop"/>
+        <TextView android:id="@+id/tvNameTypeSong"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"
+                  android:layout_toRightOf="@+id/ivIcon"
+                  android:ellipsize="marquee"
+                  android:gravity="center"
+                  android:text="Hip Hop"
+                  android:textColor="#000000"
+                  android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>
