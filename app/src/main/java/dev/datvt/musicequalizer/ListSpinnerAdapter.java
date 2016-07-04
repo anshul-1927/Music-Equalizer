@@ -26,24 +26,16 @@ public class ListSpinnerAdapter extends ArrayAdapter<String> {
         super(context, resource, data);
         this.context = context;
         this.data = data;
-        hashMap.put("Normal", R.drawable.musics);
-        hashMap.put("Classical", R.drawable.classical);
-        hashMap.put("Pop", R.drawable.pop);
-        hashMap.put("Hip Hop", R.drawable.hiphop);
-        hashMap.put("Jazz", R.drawable.jazz);
-        hashMap.put("Rock", R.drawable.rock);
-        hashMap.put("Rap", R.drawable.rap);
-        hashMap.put("Reggae", R.drawable.reggae);
-        hashMap.put("R&B", R.drawable.rb);
-        hashMap.put("Country", R.drawable.country);
-        hashMap.put("Electronic", R.drawable.electronic);
-        hashMap.put("Blues", R.drawable.blues);
-        hashMap.put("Soundtrack", R.drawable.soundtrack);
-        hashMap.put("Various", R.drawable.various);
-        hashMap.put("Punk", R.drawable.punk);
-        hashMap.put("Heavy Metal", R.drawable.metal);
-        hashMap.put("Folk", R.drawable.folk);
-        hashMap.put("Gospel", R.drawable.gospel);
+        hashMap.put("Normal", R.drawable.icon_custom);
+        hashMap.put("Classical", R.drawable.icon_classical);
+        hashMap.put("Pop", R.drawable.icon_pop);
+        hashMap.put("Hip Hop", R.drawable.icon_hip_hop);
+        hashMap.put("Jazz", R.drawable.icon_jazz);
+        hashMap.put("Rock", R.drawable.icon_rock);
+        hashMap.put("Dance", R.drawable.icon_dance);
+        hashMap.put("R&B", R.drawable.icon_rnb);
+        hashMap.put("Electronic", R.drawable.icon_electro);
+        hashMap.put("Flat", R.drawable.icon_flat);
     }
 
     @Override
@@ -68,7 +60,7 @@ public class ListSpinnerAdapter extends ArrayAdapter<String> {
         if (hashMap.get(name) != null) {
             holder.icon.setImageResource(hashMap.get(name));
         } else {
-            holder.icon.setImageResource(R.drawable.ic_album);
+            holder.icon.setImageResource(R.drawable.ic_local);
         }
         holder.name.setText(name);
 

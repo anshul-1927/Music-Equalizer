@@ -11,10 +11,11 @@
                     android:layout_weight="1">
 
         <Spinner android:id="@+id/spinner_equalizer"
-                 android:layout_width="200dp"
+                 android:layout_width="wrap_content"
                  android:layout_height="match_parent"
-                 android:drawSelectorOnTop="true"
                  android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:drawSelectorOnTop="true"
                  android:dropDownWidth="wrap_content"
                  android:paddingBottom="10dp"
                  android:spinnerMode="dropdown"/>
@@ -339,7 +340,7 @@
 
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
+                    android:layout_marginBottom="3dp"
                     android:paddingLeft="47dp"
                     android:paddingRight="34dp">
         <TextView android:id="@+id/tvBass"
@@ -385,7 +386,7 @@
                   android:paddingTop="10dp">
         <RelativeLayout android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1.5">
             <ImageView android:id="@+id/btnSpectrum"
                        android:layout_width="32dp"
                        android:layout_height="32dp"
