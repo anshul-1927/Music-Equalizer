@@ -581,72 +581,96 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 if (view_progress == progressVisualizer) {
-                    if (mCurrAngle > 10 && mCurrAngle <= 40) {
+                    if (mCurrAngle > 10 && mCurrAngle <= 30) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_1);
-                    } else if (mCurrAngle > 40 && mCurrAngle <= 70) {
+                    } else if (mCurrAngle > 30 && mCurrAngle <= 50) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_2);
-                    } else if (mCurrAngle > 70 && mCurrAngle <= 100) {
+                    } else if (mCurrAngle > 50 && mCurrAngle <= 70) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_3);
-                    } else if (mCurrAngle > 100 && mCurrAngle <= 130) {
+                    } else if (mCurrAngle > 70 && mCurrAngle <= 90) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_4);
-                    } else if (mCurrAngle > 130 && mCurrAngle <= 160) {
+                    } else if (mCurrAngle > 90 && mCurrAngle <= 110) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_5);
-                    } else if (mCurrAngle > 160 && mCurrAngle <= 180) {
+                    } else if (mCurrAngle > 110 && mCurrAngle <= 130) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_6);
-                    } else if (mCurrAngle > -180 && mCurrAngle <= -150) {
+                    } else if (mCurrAngle > 130 && mCurrAngle <= 150) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_7);
-                    } else if (mCurrAngle > -150 && mCurrAngle <= -110) {
+                    } else if (mCurrAngle > 150 && mCurrAngle <= 170) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_8);
-                    } else if (mCurrAngle > -110 && mCurrAngle <= -40) {
+                    } else if (mCurrAngle > -170 && mCurrAngle <= -150) {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_9);
+                    } else if (mCurrAngle > -150 && mCurrAngle <= -130) {
+                        progressVisualizer.setImageResource(R.drawable.cb_progress_bg_10);
+                    } else if (mCurrAngle > -130 && mCurrAngle <= -110) {
+                        progressVisualizer.setImageResource(R.drawable.cb_progress_bg_11);
+                    } else if (mCurrAngle > -110 && mCurrAngle <= -90) {
+                        progressVisualizer.setImageResource(R.drawable.cb_progress_bg_12);
+                    } else if (mCurrAngle > -90 && mCurrAngle <= -70) {
+                        progressVisualizer.setImageResource(R.drawable.cb_progress_bg_13);
                     } else {
                         progressVisualizer.setImageResource(R.drawable.cb_progress_bg_0);
                     }
                 }
 
                 if (view_progress == progressBass) {
-                    if (mCurrAngle > 10 && mCurrAngle <= 40) {
+                    if (mCurrAngle > 10 && mCurrAngle <= 30) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_1);
-                    } else if (mCurrAngle > 40 && mCurrAngle <= 70) {
+                    } else if (mCurrAngle > 30 && mCurrAngle <= 50) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_2);
-                    } else if (mCurrAngle > 70 && mCurrAngle <= 100) {
+                    } else if (mCurrAngle > 50 && mCurrAngle <= 70) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_3);
-                    } else if (mCurrAngle > 100 && mCurrAngle <= 130) {
+                    } else if (mCurrAngle > 70 && mCurrAngle <= 90) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_4);
-                    } else if (mCurrAngle > 130 && mCurrAngle <= 160) {
+                    } else if (mCurrAngle > 90 && mCurrAngle <= 110) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_5);
-                    } else if (mCurrAngle > 160 && mCurrAngle <= 180) {
+                    } else if (mCurrAngle > 110 && mCurrAngle <= 130) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_6);
-                    } else if (mCurrAngle > -180 && mCurrAngle <= -150) {
+                    } else if (mCurrAngle > 130 && mCurrAngle <= 150) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_7);
-                    } else if (mCurrAngle > -150 && mCurrAngle <= -110) {
+                    } else if (mCurrAngle > 150 && mCurrAngle <= 170) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_8);
-                    } else if (mCurrAngle > -110 && mCurrAngle <= -40) {
+                    } else if (mCurrAngle > -170 && mCurrAngle <= -150) {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_9);
+                    } else if (mCurrAngle > -150 && mCurrAngle <= -130) {
+                        progressBass.setImageResource(R.drawable.cb_progress_bg_10);
+                    } else if (mCurrAngle > -130 && mCurrAngle <= -110) {
+                        progressBass.setImageResource(R.drawable.cb_progress_bg_11);
+                    } else if (mCurrAngle > -110 && mCurrAngle <= -90) {
+                        progressBass.setImageResource(R.drawable.cb_progress_bg_12);
+                    } else if (mCurrAngle > -90 && mCurrAngle <= -70) {
+                        progressBass.setImageResource(R.drawable.cb_progress_bg_13);
                     } else {
                         progressBass.setImageResource(R.drawable.cb_progress_bg_0);
                     }
                 }
 
                 if (view_progress == progressVolumn) {
-                    if (mCurrAngle > 10 && mCurrAngle <= 40) {
+                    if (mCurrAngle > 10 && mCurrAngle <= 30) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_1);
-                    } else if (mCurrAngle > 40 && mCurrAngle <= 70) {
+                    } else if (mCurrAngle > 30 && mCurrAngle <= 50) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_2);
-                    } else if (mCurrAngle > 70 && mCurrAngle <= 100) {
+                    } else if (mCurrAngle > 50 && mCurrAngle <= 70) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_3);
-                    } else if (mCurrAngle > 100 && mCurrAngle <= 130) {
+                    } else if (mCurrAngle > 70 && mCurrAngle <= 90) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_4);
-                    } else if (mCurrAngle > 130 && mCurrAngle <= 160) {
+                    } else if (mCurrAngle > 90 && mCurrAngle <= 110) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_5);
-                    } else if (mCurrAngle > 160 && mCurrAngle <= 180) {
+                    } else if (mCurrAngle > 110 && mCurrAngle <= 130) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_6);
-                    } else if (mCurrAngle > -180 && mCurrAngle <= -150) {
+                    } else if (mCurrAngle > 130 && mCurrAngle <= 150) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_7);
-                    } else if (mCurrAngle > -150 && mCurrAngle <= -110) {
+                    } else if (mCurrAngle > 150 && mCurrAngle <= 170) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_8);
-                    } else if (mCurrAngle > -110 && mCurrAngle <= -40) {
+                    } else if (mCurrAngle > -170 && mCurrAngle <= -150) {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_9);
+                    } else if (mCurrAngle > -150 && mCurrAngle <= -130) {
+                        progressVolumn.setImageResource(R.drawable.cb_progress_bg_10);
+                    } else if (mCurrAngle > -130 && mCurrAngle <= -110) {
+                        progressVolumn.setImageResource(R.drawable.cb_progress_bg_11);
+                    } else if (mCurrAngle > -110 && mCurrAngle <= -90) {
+                        progressVolumn.setImageResource(R.drawable.cb_progress_bg_12);
+                    } else if (mCurrAngle > -90 && mCurrAngle <= -70) {
+                        progressVolumn.setImageResource(R.drawable.cb_progress_bg_13);
                     } else {
                         progressVolumn.setImageResource(R.drawable.cb_progress_bg_0);
                     }

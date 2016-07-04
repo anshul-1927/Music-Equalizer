@@ -8,9 +8,9 @@
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_centerHorizontal="true"
-                  android:layout_marginBottom="70dp"
                   android:layout_marginLeft="30dp"
-                  android:layout_marginRight="30dp">
+                  android:layout_marginRight="30dp"
+                  android:layout_marginTop="70dp">
         <ImageView android:layout_width="0dp"
                    android:layout_height="32dp"
                    android:layout_weight="1"
@@ -36,15 +36,16 @@
                    android:layout_weight="1"
                    android:src="@drawable/circle_yellow_dark"/>
     </LinearLayout>
-    <!--<io.saeid.fabloading.LoadingView-->
-        <!--android:id="@+id/loading_view_repeat"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:scaleX="2"-->
-        <!--android:scaleY="2"-->
-        <!--app:mfl_duration="400"-->
-        <!--app:mfl_onclickLoading="true"-->
-        <!--app:mfl_repeat="1"/>-->
+
+    <io.saeid.fabloading.LoadingView
+        android:id="@+id/loading_view_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:mfl_duration="400"
+        app:mfl_onclickLoading="true"
+        app:mfl_repeat="1"/>
 </RelativeLayout>

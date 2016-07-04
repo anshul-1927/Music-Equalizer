@@ -293,11 +293,12 @@
             <ImageView android:id="@+id/btnBass"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
+                       android:padding="3dp"
                        android:layout_alignBottom="@+id/iv_cb_progress_bg"
                        android:layout_alignLeft="@+id/iv_cb_progress_bg"
                        android:layout_alignRight="@+id/iv_cb_progress_bg"
                        android:layout_alignTop="@+id/iv_cb_progress_bg"
-                       android:src="@drawable/bass"/>
+                       android:src="@drawable/bass_custom"/>
 
         </RelativeLayout>
         <RelativeLayout android:layout_width="wrap_content"
@@ -311,11 +312,12 @@
             <ImageView android:id="@+id/btnVisualizer"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
+                       android:padding="3dp"
                        android:layout_alignBottom="@+id/iv_cb_progress_bg_1"
                        android:layout_alignLeft="@+id/iv_cb_progress_bg_1"
                        android:layout_alignRight="@+id/iv_cb_progress_bg_1"
                        android:layout_alignTop="@+id/iv_cb_progress_bg_1"
-                       android:src="@drawable/bass"/>
+                       android:src="@drawable/bass_custom"/>
 
         </RelativeLayout>
         <RelativeLayout android:layout_width="wrap_content"
@@ -333,7 +335,7 @@
                        android:layout_alignRight="@+id/iv_cb_v_progress_bg"
                        android:layout_alignTop="@+id/iv_cb_v_progress_bg"
                        android:padding="3dp"
-                       android:src="@drawable/volume"/>
+                       android:src="@drawable/custom_volume"/>
 
         </RelativeLayout>
     </LinearLayout>
