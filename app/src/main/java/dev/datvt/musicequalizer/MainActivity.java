@@ -537,11 +537,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (v == btnVisualizer) {
-            processRotateBass(btnBass, event, progressVisualizer);
+            processRotateBass(btnVisualizer, event, progressVisualizer);
         }
 
         if (v == btnVolumn) {
-            processRotateBass(btnBass, event, progressVolumn);
+            processRotateBass(btnVolumn, event, progressVolumn);
         }
         return true;
     }
