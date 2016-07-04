@@ -544,6 +544,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             processRotateBass(btnVolumn, event, progressVolumn);
         }
         return true;
+
     }
 
     // Animation khi xoay nút
